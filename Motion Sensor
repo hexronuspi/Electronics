@@ -1,1 +1,62 @@
+Project Description
+Motion sensor light switch using the CD4017 IC and IR proximity sensor, When the IR proximity sensor detects any motion, it sends the clock pulse to CD4017 IC. Then the 4017 changes its previous state.
+MOTION SENSOR LIGHT SWITCH USING CD4017 AND IR SENSOR, In today’s life, electricity becomes a prior need to people as to enjoy their social activities thus they need enough electricity to carry out their activities. Lighting is very significant to people as it is important to us; day or night. Early in 2014, government had introduced new electricity tariff due to transpire Subsidy Rationalisation Programme made by the government as to stop the energy subsidies gradually. Due to this increase of electrical energy production price, it is becoming more significant in conserving and saving in electrical energy consumption. Electronic system can be defined as a family of an electronic circuit and component which is designed for completing either simple function or complex function. There are various examples of electronic systems such as telecommunication system, computer system and automation system. The existence of the automation systems began from 1500 years ago where they had invented the first water pump for metal working rolling mills. Automatic control is used in various control system such as in utilizing machinery especially in industrial factories where they used a numbers of boilers, heating treating oven and other applications with minimal involvement of human. The benefits of using automatic control in our daily life are it can minimize the involvement of labour works and also it can be used in saving the energy consumption.
+
+
+
+
+	
+Construction:
+
+The ICs CD4017 and LM358 are used for the construction of the Motion sensor, the ICs are connected accordingly to the electronic components which turns ON and OFF the green LED. The red LED is present to give the indication about the movement across the IR receiver and transmitter. 
+
+The capacitor of 100uF is present for the time delay of the red LED as, it may not be completely visible if the LED glows or not during a movement across the sensors.
+Working:
+
+1.	The IR emitter LED continuously emits infrared. When any object comes within the range, some amount of infrared reflects from the object’s surface and that reflected infrared can be detected by the IR receiver LED.
+2.	The LM358 compares the voltage across the IR receiver LED with the predefined value. When any motion is detected the voltage across the IR receiver crosses the predefined value, so the output pin (pin 1) of LM358 becomes high.
+3.	The clock pin (Pin-14) of CD4017 IC is connected to the output pin of LM358, so when any motion is detected, the 4017 IC receives a clock pulse and changes the current state of Pin-2.
+4.	The Pin-2 of CD4017 is connected with resistor of 220 Ohms, so when the Pin-2 becomes high green LED turns ON.
+5.	When the IR LEDs detect any motion the second time, it sends the next clock pulse to CD4017 IC. Then the Pin-2 becomes low.
+6.	If the Pin-2 becomes low, the LED turns off.
+The working of an IR LED is to emit IR rays continuously, so when an object comes to these rays, some of these will reflect by this object and go back to the IR receiver.
+Then LM358 op-amp compares the voltage between the IR receiver and predefined value. If any voltage fluctuation is detected happened by the IR receiver, then the output of LM358 becomes high. The clock pin (pin 14) of 4017 IC is connected with the output pin (pin 1) of LM358 IC.
+The output of the op-amp is then received as an input to the 4017 IC and it changes the current state of the output pin (pin 2). The output of the 4017-decade-counter is connected to the 220 Ohm resistance.
+
+
+
+
+
+
+3
+Required Components for this 4017 Project:
+1) CD4017 IC
+2) LM358 IC
+3) 100uF 25V Capacitor
+4) 1000uF 25V Capacitor
+5) 220-Ohm 0.25watt Resistors – x4
+6) 10KOhm 0.25W Resistor
+7) 10KOhm Trimmer
+8) LED 5mm – x2
+9) IR LED pair (Detector & Emitter)
+10) 1N4007 Diode
+11) Connectors & IC Base
+
+*Note : In the actual circuit the 5V relay and BC547 transistor is not used as it’s use required AC current supply. Instead of that a green LED is used which shows the ON/OFF state and the working of the circuit is clearly presented .
+Advantage/Disadvantage:
+Advantage of motion detector circuit is that we can hide the sensors pretty well, so it is very unlikely to find out where the sensors are hidden. In case of IR-detector it consumes very less energy and is very small in size.
+Disadvantage of using a sensor is that it does not usually cover very long distance, in the case of the circuit made the maximum distance up to which it works is 7cm-10cm depending on the pot resistance. 
+Application: 
+Some of the key applications of motion detectors include:
+•	Intruder alarms
+•	Automatic ticket gates
+•	Entry way lighting
+•	Security lighting
+•	Automated sinks/toilet flusher
+•	Hand dryers
+•	Automatic doors
+
+Summary:
+A motion sensor, or motion detector, is an electronic device that uses a sensor to detect nearby people or objects. Motion sensors are an important component of any security system. When a sensor detects motion, it will send an alert to your security system, and with newer systems, right to your mobile phone.
+
 
